@@ -1,0 +1,30 @@
+GET http://localhost:3000/ HTTP/1.1
+
+###
+GET http://localhost:3000/books HTTP/1.1
+
+###
+GET http://localhost:3000/books/5 HTTP/1.1
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Titulo prueba",
+    "author": "Autor prueba",
+    "year": 1954
+}
+
+###
+DELETE http://localhost:3000/books/4 HTTP/1.1
+
+###
+PUT http://localhost:3000/books/4  HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Burlar al diablo",
+    "author": "Napoleon Hill",
+    "year": 2012
+}
